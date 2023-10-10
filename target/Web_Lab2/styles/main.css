@@ -1,0 +1,136 @@
+@import "header.css";
+body{
+    background-image: url("../img/background-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main{
+    font-family: "fantasy";
+    font-size: 20px;
+    background: #777684;
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    border: solid;
+    min-height: 80vh;
+}
+.div-canvas{
+    border-bottom: #888888 groove;
+}
+
+canvas {
+    box-shadow: 0px 0px 20px 7px rgba(0,0,0,0.8);
+    margin-bottom: 2vh;
+}
+
+.sendForm{
+    text-align: center;
+    padding: 20px;
+    margin: 0 20%;
+}
+
+.params-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3vh;
+}
+
+.params-container label{
+    margin-right: 40px;
+    font-size: 1.2em;
+    white-space: nowrap;
+}
+
+#choose-x button{
+    padding: 8px 15px;
+    margin: 4px 1.5px 0 0;
+    border: none;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 8px;
+    background: rgba(82,97,100,0.64);
+    color: white;
+    cursor: pointer;
+}
+
+#choose-x button.active{
+    background-color: #32343d;
+}
+
+input:focus {
+    box-shadow: 0 0 10px black;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(82,97,100,0.64);
+    color: white;
+    cursor: pointer;
+}
+
+#sendButton{
+    background-color: rgba(82,97,100,0.64);
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 7px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+#clear-button{
+    background-color: #ff3a33;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 7px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    margin-left: 5px;
+}
+#clear-button:hover{
+    background-color: #ff7348;
+    color: #eee;
+
+}
+#sendButton:hover{
+    background-color: #32343d;
+    color: #eee;
+}
+
+input {
+    background: rgba(82,97,100,0.64);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+}
+
+input::placeholder{
+    color: #888;
+}
+
+label::before{
+    content: "→";
+}
+
+.table{
+    text-align: left;
+    border-spacing: 10px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-container{
+    max-height: 300px;
+    overflow: auto;
+}
+
+td{
+    border: #32343d 1.5px solid;
+}
+
